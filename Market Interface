@@ -1,0 +1,25 @@
+package com.guideme.interfaces;
+public class MarketInterfaceExample  {
+	public static void main(String[] args) {
+		twoWheeler tw = new twoWheeler();
+		//fourWheeler fw= new fourWheeler();
+		if (tw instanceof parking){
+		  System.out.println("Allowed to enter");
+		}
+		  else 
+		  System.out.println("not Allowed to enter");
+	}
+	
+}
+
+interface parking{
+    
+}
+
+class twoWheeler implements parking{
+    
+}
+
+class fourWheeler {
+    
+}
