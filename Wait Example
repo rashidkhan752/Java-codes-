@@ -1,0 +1,16 @@
+public class waitExample 
+{
+	public static void main(String[] args) {
+		System.out.println("One");
+		synchronized (args) {
+		    System.out.println("two");
+		    try {
+		        args.wait(1000); 
+		    }
+		    catch (InterruptedException e) {
+		        e.printStackTrace();
+		    }
+		    System.out.println("Three");
+		}
+	}
+}
